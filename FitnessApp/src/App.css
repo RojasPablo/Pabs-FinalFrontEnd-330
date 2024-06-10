@@ -1,0 +1,302 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #241f20;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.nav-inner-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #241f20;
+  margin: 0 5px;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #adda00;
+  cursor: pointer;
+  background-color: #241f20;
+  border-color: #646cff;
+}
+
+.nav-link.active {
+  color: #adda00;
+  border: 1.5px solid #646cff;
+}
+
+.nav-h1 {
+  color: white;
+  font-weight: 200;
+  font-size: xx-large;
+}
+
+/* needed to account for fixed navbar position */
+body {
+  margin-top: 80px;
+}
+h4{
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #241f20;
+  margin-top: 5px;
+}
+
+
+h1,
+h2,
+p,
+.form,
+.content {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #646cff;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.success-message {
+  color: green;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+h2 {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #241f20;
+  margin-top: 5px;
+}
+
+p {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #241f20;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+.login-links {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 25px;
+}
+
+.signup-link {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #adda00;
+  padding: 10px 30px;
+  color: #241f20;
+  display: flex;
+  line-height: 30px;
+}
+
+.login-link {
+  border: 2px solid #241f20;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px 30px;
+  color: #241f20;
+  display: flex;
+  text-align: center;
+  line-height: 30px;
+}
+
+input {
+  margin-top: 25px;
+  border: 2.25px solid #646cff;
+  margin-left: 5px;
+  border-radius: 15px;
+  padding: 0.75rem;
+}
+
+.input-containers {
+  gap: 5px;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #adda00;
+  padding: 5px 30px;
+  color: #241f20;
+  line-height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.logout-button {
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: #241f20;
+  padding: 0.5rem;
+  color: white;
+  line-height: 24px;
+  gap: 5px;
+  font-size: medium;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.logout-button:hover {
+  color: #adda00;
+  cursor: pointer;
+  background-color: #241f20;
+  border-color: #646cff;
+}
+
+.workout-containers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.workout-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #241f20;
+  color: white;
+  border: 1px solid #646cff;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.workout-item-content {
+  flex: 1;
+}
+
+.update-button,
+.delete-button {
+  border-radius: 50px;
+  border: solid white;
+  padding: 5px 30px;
+  color: black;
+  margin-top: 10px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: rgb(251, 79, 79);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+span {
+  color: #adda00;
+  font-weight: 500;
+}
+
+form {
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+.workouts-h2{
+ margin-top: 175px;
+}
+.icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.milestone-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #241f20;
+  color: white;
+  border: 1px solid #646cff;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.milestone-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.completed-button {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.completed-button button {
+  margin-top: 45px;
+  border-radius: 50px;
+  border: solid white;
+  padding: 5px 30px;
+  background-color: #adda00;
+  color: #241f20;
+  cursor: pointer;
+}
+.update{
+  margin-top: 20px;
+}
+.h2-milestones{
+  margin-top: 175px;
+}
